@@ -123,7 +123,7 @@ input:focus:invalid {
     border: 2px solid hsl(0, 100%, 40%);
     background-image: url(images/icon-error.svg);
     background-repeat: no-repeat;
-    background-position: 290px center;
+    background-position: 95% center;
     background-size: 20px;
 }
 
@@ -229,9 +229,6 @@ a {
         font-weight: 500;
     }
     input:focus:invalid {
-        border: 2px solid hsl(0, 100%, 40%);
-        background-image: url(images/icon-error.svg);
-        background-repeat: no-repeat;
         background-position: 95% center;
         background-size: 20px;
     }
