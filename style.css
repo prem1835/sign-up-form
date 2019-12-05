@@ -238,5 +238,6 @@ a {
     /* FOOTER */
     .attribution {
         width: 300px;
+        position: fixed;
     }
 }
