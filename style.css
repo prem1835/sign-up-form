@@ -174,7 +174,7 @@ a {
 
 @media screen and (max-width: 400px) {
     .full-size {
-        height: 100vh;
+        height: 200vh;
     }
     .con-1--heading {
         width: 280px;
@@ -232,7 +232,7 @@ a {
         border: 2px solid hsl(0, 100%, 40%);
         background-image: url(images/icon-error.svg);
         background-repeat: no-repeat;
-        background-position: 290px center;
+        background-position: 95% center;
         background-size: 20px;
     }
     /* FOOTER */
