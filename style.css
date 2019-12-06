@@ -24,18 +24,21 @@ body {
 
 .container-main {
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .con-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    width: 500px;
+    align-items: center;
+    width: 40%;
 }
 
 .con-2 {
-    width: 500px;
+    width: 40%;
 }
 
 
@@ -43,35 +46,35 @@ body {
 
 .con-1--heading {
     margin: 0;
-    width: 400px;
+    width: 70%;
     font-weight: 700;
     line-height: 1.1;
     font-size: 40px;
 }
 
 .con-1--para {
-    width: 450px;
+    width: 70%;
     font-size: smaller;
 }
 
 .con-2--heading-block {
-    width: 470px;
+    width: 80%;
     display: block;
     background-color: hsl(248, 32%, 49%);
     border-radius: 10px;
     margin-bottom: 18px;
-    padding: 17px 15px;
+    padding: 25px;
     text-align: center;
     box-shadow: 2px 8px 5px rgba(0, 0, 0, .2);
     font-size: smaller;
 }
 
-.form-para {
+.form-para-box {
+    width: 100%;
     color: hsl(246, 25%, 77%);
     font-size: xx-small;
     text-align: center;
     font-weight: 600;
-    margin-right: 20px;
 }
 
 .red-color {
@@ -86,19 +89,20 @@ body {
 /* FORM */
 
 .con-2--form {
+    width: 80%;
     background-color: white;
     border-radius: 10px;
-    padding: 33px 12px 30px 38px;
+    padding: 25px;
     box-shadow: 2px 8px 5px rgba(0, 0, 0, .2);
 }
 
 input {
-    width: 295px;
+    width: 95%;
     background-color: transparent;
-    padding: 16px 113px 16px 20px;
+    padding: 16px 0 16px 20px;
     border: 2px solid hsl(246, 25%, 90%);
     border-radius: 5px;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
 }
 
 input::placeholder {
@@ -131,7 +135,7 @@ input:focus:invalid {
 /* BUTTON */
 
 .btn {
-    width: 432px;
+    width: 100%;
     padding: 16px 0;
     color: white;
     background-color: hsl(154, 59%, 51%);
@@ -160,7 +164,7 @@ footer {
     text-align: center;
     color: hsl(248, 32%, 49%);
     margin: 0 auto;
-    width: 400px;
+    width: 28%;
     border-top: 3px solid hsl(154, 59%, 51%)
 }
 
@@ -172,12 +176,11 @@ a {
 
 /* MEDIA QUEARI */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
     .full-size {
-        height: 160vh;
+        height: 135vh;
     }
     .con-1--heading {
-        width: 280px;
         margin: 0 auto;
         font-weight: 600;
         line-height: 1.2;
@@ -189,51 +192,34 @@ a {
     }
     .con-1 {
         display: unset;
-        flex-direction: unset;
-        justify-content: unset;
-        align-items: unset;
         width: unset;
         text-align: center;
     }
     .con-2 {
-        width: 340px;
-    }
-    .con-2--form {
-        padding: 33px 12px 30px 35px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .con-1--para {
         margin: 0 auto;
-        width: 270px;
+        width: 58%;
         font-weight: 400;
         margin-bottom: 25px;
     }
-    .con-2--heading-block {
-        margin: 0 auto;
-        width: 280px;
-        margin-bottom: 18px;
-        padding: 30px;
-    }
     .form-para {
-        width: 200px;
-        margin-left: 40px;
-        margin-bottom: 15px;
-    }
-    input {
-        width: 200px;
-        padding: 15px 60px 15px 20px;
-        margin-bottom: 15px;
+        margin: 10px auto;
     }
     .btn {
-        width: 285px;
-        padding: 15px 0;
+        /* width: 103%; */
         font-weight: 500;
     }
     input:focus:invalid {
-        background-position: 95% center;
         background-size: 20px;
     }
     /* FOOTER */
     .attribution {
-        width: 300px;
+        width: 70%;
     }
 }
