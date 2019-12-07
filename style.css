@@ -129,6 +129,7 @@ input:focus:invalid {
     background-repeat: no-repeat;
     background-position: 95% center;
     background-size: 20px;
+    outline: 0 none;
 }
 
 
